@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:wisata_app/provider/done_tourism_provider.dart';
-import 'percobaan1.dart';
-import 'percobaan2.dart';
-import 'percobaan3.dart';
-import 'percobaan4.dart';
-import 'percobaan5.dart';
-import 'latihan1.dart';
-import 'tugas1.dart';
-import 'main_screen.dart';
+import 'package:wisata_app/percobaan1.dart';
+import 'package:wisata_app/percobaan2.dart';
+import 'package:wisata_app/percobaan3.dart';
+import 'package:wisata_app/percobaan4.dart';
+import 'package:wisata_app/percobaan5.dart';
+import 'package:wisata_app/latihan1.dart';
+import 'package:wisata_app/tugas1.dart';
+import 'package:wisata_app/main_screen.dart';
 
 void main() {
   runApp(const MyApp());

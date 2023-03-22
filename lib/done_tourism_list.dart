@@ -24,16 +24,32 @@ class DoneTourismList extends StatelessWidget {
           return Card(
             color: Colors.white60,
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Text(
-                  place.name,
-                  style: const TextStyle(fontSize: 16.0),
-                ),
-                const Icon(Icons.done_outline)
-              ],
-            ),
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Expanded(
+                    flex: 1,
+                    child: Image.asset(place.imageAsset),
+                  ),
+                  Expanded(
+                      child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        Text(
+                          place.name,
+                          style: TextStyle(fontSize: 16.0),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(place.location),
+                      ],
+                    ),
+                  )),
+                  const Icon(Icons.done_outline),
+                ]),
           );
         },
         itemCount: doneTourismPlaceList.length,
